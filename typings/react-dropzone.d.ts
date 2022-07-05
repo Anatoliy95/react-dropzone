@@ -28,7 +28,7 @@ export interface FileRejection {
 }
 
 export type DropzoneOptions = Pick<React.HTMLProps<HTMLElement>, PropTypes> & {
-  accept?: Accept;
+  accept?: string | string[];
   minSize?: number;
   maxSize?: number;
   maxFiles?: number;
